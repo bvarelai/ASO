@@ -6,7 +6,7 @@
 - **2 puntos** : Exponer un trabajo frente a varios personas o corregir el trabajo de otros (justificando).
 Se puede conservar cualquier parte para el año que viene.
 ## Web con los apuntes
-- **URL** : www.dc.fi.udc.es(a)yañez
+- **URL** : https://www.dc.fi.udc.es/~afyanez/Docencia/index.html
 Detras de la "a" va la virgulilla
 # Tema 1 : Introducción
 ## Que es un Administrador de Sistemas
