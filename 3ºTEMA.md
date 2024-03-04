@@ -9,3 +9,5 @@
 - Credencial Real :  
 - Credencial Efectiva :
 #### Terminal de Control
+## El Sistema de Ficheros /proc
+Sistema de ficheros donde se obtiene informacion del sistema y de los procesos. Este sistema es virtual
