@@ -10,4 +10,11 @@
 - Credencial Efectiva :
 #### Terminal de Control
 ## El Sistema de Ficheros /proc
-Sistema de ficheros donde se obtiene informacion del sistema y de los procesos. Este sistema es virtual
+- Sistema de ficheros donde se obtiene informacion del sistema y de los procesos. Este sistema es virtual
+## Procesos de Solaris
+- Permitido vs efectivo : El maximo que puedes tener vs El que tienes en este momento
+
+## Proceso en tiempo real
+- rtprio : en freeBSD
+- chrp : ¿en linux?
+- priocmtl : ¿Solaris? (es priocmtl)
