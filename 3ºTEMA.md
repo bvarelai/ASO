@@ -13,8 +13,12 @@
 - Sistema de ficheros donde se obtiene informacion del sistema y de los procesos. Este sistema es virtual
 ## Procesos de Solaris
 - Permitido vs efectivo : El maximo que puedes tener vs El que tienes en este momento
-
 ## Proceso en tiempo real
 - rtprio : en freeBSD
 - chrp : ¿en linux?
 - priocmtl : ¿Solaris? (es priocmtl)
+## Instalacion de paquetes
+- Los DEB tienen dpkg, apt get y apt
+- RPM tiene rpem, yum y dnf
+- Solaris pkgadd y pkg
+- BSD pkg_add (añadir), pkg_info. Si no tienes pkg_in se instala con pkg
