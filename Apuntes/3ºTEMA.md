@@ -22,3 +22,8 @@
 - RPM tiene rpem, yum y dnf
 - Solaris pkgadd y pkg
 - BSD pkg_add (añadir), pkg_info. Si no tienes pkg_in se instala con pkg
+## Gzip y zip
+- Para comprimir archivos .xz
+## Jails
+exec.start : lo que se ejcuta cuando empieza
+exec.end : lo que se ejecuta cuando acaba
