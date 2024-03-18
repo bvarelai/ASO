@@ -25,5 +25,8 @@
 ## Gzip y zip
 - Para comprimir archivos .xz
 ## Jails
+- Creas una carpeta
+- Creas archivo de configuracion con el usuario
+- La lanzas
 exec.start : lo que se ejcuta cuando empieza
 exec.end : lo que se ejecuta cuando acaba
