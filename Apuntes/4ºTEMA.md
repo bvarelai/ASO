@@ -24,4 +24,13 @@
   **warn**: numero dias antes de que expire el usuario es avisado  
   **inactive**: dias que la passwd se aceptara despues de que esta expirara  
   **expire**: dia que la cuenta expira  
-  **reserved**: para uso futuro  
+  **reserved**: para uso futuro
+## Shell Reducidos
+- Shell en el que no puedes modificar variables de entorno y tocar el PATH. Creas un directorio  
+y en ese olo puedes hacer una serie de comandos
+- login class se encuentra en /etc/login.conf. Tambien esta la default class. 
+## PAM
+- Este es un programa de login, provee una libreria de funciones que se pueden usar para comprobar que el usuario esta autenticado.  
+### Modulos
+- sufficient : si el modulo PAM dice que si, es que si. Si dice no, no pasa nada.  
+- requisite: si el modulo dice que no, es que no. Si dice si nada.  
