@@ -74,7 +74,7 @@ gpasswd -a usuario intercambio //añadir al usuario
 newgrp intercambio
 gpasswd -d usuario intercambio //eliminar al usuario
 ```
-- Para hacer un usuario pueda cambiar el passwdord hay que ir al `/etc/gshadow` y añadir en la linea del **grupo instaladores**
+- Para hacer un usuario pueda hacer `newgrp intercambio` hay que ir al `/etc/gshadow` y añadir en la linea del **grupo instaladores**
 el nombre del usuario en el segundo campo empezando por la derecha
 #### Crear un alias Instaladores (en Devuan) donde varios usuarios pueden admninistrar software
 - Modificar el archivo **/etc/sudoers** y añadir:
