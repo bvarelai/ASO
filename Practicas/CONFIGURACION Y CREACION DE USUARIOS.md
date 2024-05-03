@@ -47,8 +47,6 @@ jaulita {
          exec.stop = "/bin/sh  /etc/rc.shutdown";  
 }
 ```
-  
-
 ## Creacion de usuarios
 - Al crear los usuarios hay que comprobar que con entorno grafico al loggearte  
   cualquier usuario puede   entrar. Si un usuario no entra es por que esta mal creado.
@@ -61,7 +59,24 @@ jaulita {
 ```
 for i in `seq -w 0 999`; do /usr/sbin/useradd -m -p `mkpasswd --method=yescrypt qwerty$i` user$i; done 
 ```
-### Crear un alias Instaladores (en Devuan) donde varios usuarios pueden admninistrar software
+#### Crear un directorio /var/INTERCAMBIO al que solo puedan acceder user008 y user009
+- Creacion del directorio y asignar usuarios 
+```
+groupadd intercambio
+usermod -aG intercambio user008
+mkdir /var/INTERCAMBIO
+chgrp intercambio /var/INTERCAMBIO
+chmod 770 /var/INTERCAMBIO
+```
+- Hacer que puedan acceder otros usuarios conociendo el passwd
+```
+gpasswd -a usuario intercambio //añadir al usuario
+newgrp intercambio
+gpasswd -d usuario intercambio //eliminar al usuario
+```
+- Para hacer un usuario pueda cambiar el passwdord hay que ir al `/etc/gshadow` y añadir en la linea del **grupo instaladores**
+el nombre del usuario en el segundo campo empezando por la derecha
+#### Crear un alias Instaladores (en Devuan) donde varios usuarios pueden admninistrar software
 - Modificar el archivo **/etc/sudoers** y añadir:
 ```
 
