@@ -105,6 +105,58 @@ ipadm create-addr -T static -a 192.168.2.101/24 net2/addr
 
 ## Configuracion de la segunda máquina
 ### Ubuntu Server
+- Ir al mismo fichero que el Devuan y poner lo siguiente:
+```
+# interfaces(5) file used by ifup(8) and ifdown(8)
+# Include files from /etc/network/interfaces.d:
+source /etc/network/interfaces.d/*
+
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+
+# The primary network interface
+auto enp0s3
+allow-hotplug enp0s3
+iface enp0s3 inet dhcp
+
+
+# The second network interface
+#auto enp0s8
+iface enp0s8 inet static 
+address 192.168.1.101 
+netmask 255.255.255.0
+network 192.168.1.0
+broadcast 192.168.1.255
+gateway 192.168.1.1
+
+#auto enp0s8:0
+iface enp0s8:0 inet static
+address 192.168.10.101
+
+#auto enp0s8:1
+iface enp0s8:1 inet static
+address 192.168.100.101
+
+
+# The third network interface
+#auto enp0s9
+iface enp0s9 inet static
+address 192.168.2.101
+netmask 255.255.255.0
+network 192.168.2.0  
+broadcast 192.168.2.255
+gateway 192.168.2.1  
+
+#auto enp0s9:0
+iface enp0s9:0 inet static
+address 192.168.20.101
+
+#auto enp0s9:1
+iface enp0s9:1 inet static
+address 192.168.200.101
+```
 ### NetBSD
 ## Configuracion de la tercera máquina
 ### Fedora
