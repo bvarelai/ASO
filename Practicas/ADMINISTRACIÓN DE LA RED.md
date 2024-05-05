@@ -158,6 +158,7 @@ iface enp0s9:1 inet static
 address 192.168.200.101
 ```
 ### NetBSD
+- Misma configuracion que freeBSD
 ## Configuracion de la tercera máquina
 ### Fedora
 - Ir al directorio `/etc/sysconfig/network-scripts/` y crear una serie de archivos:  
