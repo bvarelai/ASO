@@ -216,4 +216,9 @@ ifconfig_em2_alias1="inet 192.168.200.103 netmask 255.255.255.0"
 - Esta configuracion es persistente, por lo que se mantendra tras un reinicio de la maquina.
   
 
+## Importante
+
+- Maquina 1 (Devuan) <---> Maquina 2 (NetBSD) VA
+- Maquina 1 (Devuan) <---> Maquian 2 (Ubuntu) VA (Para ir de devuan a ubuntu hay que pillar el alias 1 de la segunda targeta de red)
+- Maquina 1 (Devuan) <----> MAquina 3 (FreeBSD) VA
 
