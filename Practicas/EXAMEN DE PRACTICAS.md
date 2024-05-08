@@ -13,3 +13,7 @@ ver que tiene swap habia que ir al /etc/fstap
 - Con sysmerge se actualizan los archivos de configuracion
 - Las particiones estan en /dev/sd0a, sd0e...
 - en /etc/fstap aparece que la swap es una particion
+## Maquina Solaris 
+- pkg update : para actualizar
+- el grub esta en /rpool/boot/grub
+- En /dev/rdsk/ estan las particiones
