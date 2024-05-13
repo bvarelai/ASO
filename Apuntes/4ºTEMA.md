@@ -11,7 +11,12 @@
 - En los sistemas BSD los ficheros pertencen al grupo asociado al directorio en el que estan.
 ## Ficheros de la base de datos de usuarios
 - La informacion de los usuarios se almacena en ficheros de texto, estos se localizan en /etc.
-- Dentro de /etc/ tenemos /etc/passwd /etc/shadow /etc/group /etc/gshadow/ /etc/master.passwd/.
+- Dentro de /etc/ tenemos:
+- /etc/passwd : cuentas de usuario
+- /etc/shadow : passwd de usuarios (linux)
+- /etc/group : grupos
+- /etc/gshadow/ : passwd de grupos
+- /etc/master.passwd/: cuentas de usuarios y contraseñas (BSD)
 - En /etc/passwd cada linea representa un usuario.
   **username:x:UID:GID:user information:home-directory:login-shell**  
   **x**: como se encripta la password  
