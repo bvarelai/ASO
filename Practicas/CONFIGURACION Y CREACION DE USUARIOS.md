@@ -17,6 +17,10 @@ ya que sino la instalacion de **OpenBSD** falla.
 #### Cosas de sudo
 - sudo [-u usuario] comando
 #### Zona de Solaris
+- Para crear la zona hacemos **zfs create rpool/ZONILLA** (Creamos el sistema de archivos de la zona)
+y con **zonecfg -z zonita** (para crear la zona y asignarle el sistema de archivos)
+- Para instalar la zona hacemos **zoneadm -z zonita install** y para iniciarla **zoneadm -z zonita boot**
+- Si queremos configurar la zona hacemos **zlogin -C zonita** 
 - Para ver las zonas disponibles usar **zoneadm list -icv**
 - Para acceder usar **zlogin zonita**.
 - Para cambiar de usuario **su - elbueno**.
@@ -24,6 +28,7 @@ ya que sino la instalacion de **OpenBSD** falla.
 ## Instalacion y configuración de la segunda maquina
 ### Ubuntu Server
 #### Container LXC
+- Para crearlo hacemos lxc-create -t ubuntu -n PruebaContainer (Dependiendo del linux donde se haga)
 - Para ver los containers lxc-ls -f
 - Para entrar en uno de ellos hacer lxc-attach -n PruebaContainer
 ### NetBSD
